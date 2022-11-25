@@ -152,26 +152,26 @@ using namespace std;
 // .
 
 
-//OPERATOR OVERLOADING N FRND FUNC
+//OPERATOR OVERLOADING N FRND FUNC   (important)
 
-// class complex{
-//     int real;
-//     int img;
+class complex{
+    int real;
+    int img;
 
-// public:
-//     complex(int r=0,int i=0){
-//         int real = r;
-//         int img = i;
-//     }
-//     complex add(complex c);
-//     friend complex operator+(complex c1,complex c2);     //now it can access the private and public members of its parent class
-// };
+public:
+    complex(int r=0,int i=0){
+        int real = r;
+        int img = i;
+    }
+    complex add(complex c);
+    friend complex operator+(complex c1,complex c2);     //now it can access the private and public members of its parent class
+};
 
-// complex complex::add(complex c){
-//     complex = temp;
-//     temp.real = real+c.real;
-//     temp.img = img+c.img;
-// }
+complex complex::add(complex c){
+    complex = temp;
+    temp.real = real+c.real;
+    temp.img = img+c.img;
+}
 
 
 
